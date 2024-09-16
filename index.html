@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>End to End Bus</title>
+    <!-- Daisy UI and Tailwind CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="CSS/style.css" />
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+              "primary-color": "#1DD100",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <header class="container mx-auto font-raleway">
+      <nav>
+        <div class="navbar bg-base-100">
+          <div class="navbar-start">
+            <div class="dropdown">
+              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16"
+                  />
+                </svg>
+              </div>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+              >
+                <li><a>Item 1</a></li>
+                <li><a>Item 1</a></li>
+                <li><a>Item 1</a></li>
+                <li><a>Item 1</a></li>
+              </ul>
+            </div>
+            <a class="btn btn-ghost text-3xl font-extrabold">P-Ticket</a>
+          </div>
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1">
+              <li><a>Home</a></li>
+              <li><a>About</a></li>
+              <li><a>Destination</a></li>
+              <li><a>Search</a></li>
+            </ul>
+          </div>
+          <div class="navbar-end">
+            <a
+              class="btn bg-[#1DD1001A] text-primary-color border-2 border-[#1DD10066] text-xl font-semibold"
+              >Bus <img src="images/bus-icon.png" alt=""></a
+            >
+          </div>
+        </div>
+      </nav>
+      <!-- Banner section -->
+      <div>
+        <div
+        class="hero min-h-[550px] rounded-3xl"
+        style="
+          background-image: url('images/banner.png');
+        "
+      >
+        <div class="hero-overlay bg-opacity-60 rounded-3xl"></div>
+        <div class="hero-content text-neutral-content text-center">
+          <div class="font-inter w-[742px]">
+            <h1 class="mb-6 text-6xl font-extrabold">End-to-End Travel with <br>
+                <span class="text-primary-color">P Paribahan</span>
+            </h1>
+            <p class="mb-5 text-center">
+              Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda
+              excepturi exercitationem quasi. In deleniti eaque aut repudiandae
+              et a id nisi.
+            </p>
+            <button class="btn bg-primary-color text-black border-0">Buy Tickets</button>
+          </div>
+        </div>
+      </div>
+      <!-- Utility -->
+      <div class="flex justify-around relative -top-20">
+        <div class="flex rounded-3xl border-b-4 border-primary-color w-[308px] p-8 justify-between bg-white">
+            <img src="images/people.png" alt="">
+            <div>
+                <h2 class="text-3xl font-extrabold">500K+</h2>
+                <p>Registered users</p>
+            </div>
+        </div>
+        <div class="flex rounded-3xl border-b-4 border-primary-color w-[308px] p-8 justify-between bg-white">
+            <img src="images/ticket-cupon.png" alt="">
+            <div>
+                <h2 class="text-3xl font-extrabold">1.7 lacks</h2>
+                <p>Tickets sold</p>
+            </div>
+        </div>
+        <div class="flex rounded-3xl border-b-4 border-primary-color w-[308px] p-8 justify-between bg-white">
+            <img src="images/stoppage.png" alt="">
+            <div>
+                <h2 class="text-3xl font-extrabold">80K+</h2>
+                <p>Rental partners</p>
+            </div>
+        </div>
+    </div>
+      </div>
+    </header>
+    <main class="container mx-auto"></main>
+  </body>
+</html>
