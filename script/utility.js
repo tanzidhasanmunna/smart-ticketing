@@ -50,3 +50,15 @@ function buyButton(){
     document.getElementById("main-section").classList.add("hidden");
     document.getElementById("success-payment").classList.remove("hidden");
 }
+
+function cancel (element){
+    if (element.style.color === 'white'){
+        element.style.removeProperty('background-color');
+        element.style.removeProperty('color');
+        const ind = seats.indexOf(element.id);
+        seats.splice(ind, 1);
+        const newId = element.id.toLowerCase();
+        popElement(newId);
+         
+    }
+}
