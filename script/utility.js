@@ -31,6 +31,8 @@ function setBackgroundColor(element){
     
  }
  function popElement( element ){
-    document.getElementById(element).classList.add('hidden')
+    const seatElement = document.getElementById("seat-selected");
+    const removed = document.getElementById(element);
+    seatElement.removeChild(removed);
 }
  
