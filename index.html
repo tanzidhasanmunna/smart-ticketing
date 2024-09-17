@@ -125,7 +125,7 @@
     </div>
       </div>
     </header>
-    <main class="container mx-auto 
+    <main id="main-section" class="container mx-auto 
         <!-- offer section -->
         <section class="content-center">
             <h2 class="text-4xl font-semibold font-raleway text-center">Best offers for you</h2>
@@ -177,7 +177,7 @@
                         </div>
                         <div class="bg-[#1DD10026] w-[180px] flex text-primary-color font-bold p-4 rounded-lg gap-2 text-center">
                             <img src="images/seat-green-filled.png" alt="">
-                            <span>40</span>Seats left
+                            <span id="seat-left">40</span>Seats left
                         </div>
                     </div>
                     <div class="divide-y divide-dashed bg-[#F7F8F8] p-8">
@@ -214,7 +214,7 @@
                             </div>
                             <div class="flex gap-2">
                                 <img src="images/seat-green.png" alt="">
-                                <p class="text-primary-color font-extrabold">Available</p>
+                                <p class="text-primary-color font-extrabold">Selected</p>
                             </div>
                         </div>
                         <div>
@@ -298,7 +298,7 @@
                         <div><h2 class="text-2xl font-extrabold py-8">Select Your Seat</h2></div>
                         <div class="divide-y divide-dashed my-2 bg-[#F7F8F8] rounded-lg p-8">
                             <div class="flex justify-between font-bold pb-4">
-                                <p>Seat</p>
+                                <p>Seat<span id="total-seat-select" class="bg-primary-color p-1 rounded-full ml-2">0</span></p>
                                 <p>Class</p>
                                 <p>Price</p>
                             </div>
@@ -307,16 +307,16 @@
                             <div>
                                 <div class="flex justify-between py-4 font-bold">
                                     <p>Total Price</p>
-                                    <p>BDT 00</p>
+                                    <p>BDT <span id="total-price">00</span></p>
                                 </div>
                                 <div>
                                     <label class="flex" for="">
-                                        <input class="input w-full" type="text" placeholder="Have any copupon?">
-                                        <Button class="btn bg-primary-color text-white w-20">Apply</Button></label>
+                                        <input id="cuppon-value" class="input w-full" type="text" placeholder="Have any copupon?">
+                                        <Button id="apply-cuppon" onclick="offerChecker()" class="btn bg-primary-color text-white w-20">Apply</Button></label>
                                 </div>
                                 <div class="flex justify-between font-bold pt-8">
                                     <p>Grand Total</p>
-                                    <p>BDT 00</p>
+                                    <p>BDT <span id="grand-total">00</span></p>
                                 </div>
                             </div>
                         </div>
@@ -340,7 +340,7 @@
                             </div>
                             <input type="email" placeholder="Enter your email id" class="input input-bordered w-[433px]" />
                           </label>
-                        <button class="btn bg-primary-color text-white w-[433px] mt-4 rounded-2xl" disabled>Submit</button>
+                        <button id="btn-buy" onclick="buyButton()" class="btn bg-primary-color text-white w-[433px] mt-4 rounded-2xl" disabled>Buy</button>
                         <div class="flex justify-around w-[433px] mt-4">
                             <p>Terms and Conditions</p>
                             <p>Cancellation Policy</p>
@@ -352,7 +352,7 @@
 
     </main>
     <!-- Success payment -->
-    <section class="bg-[#F2F1F1] min-h-[670px] py-40 hidden">
+    <section id="success-payment" class="bg-[#F2F1F1] min-h-[670px] py-40 hidden">
         <div class="flex flex-col items-center bg-white w-[800px] mx-auto p-4">
             <div class=""><img src="images/success.png" alt=""></div>
         <h2 class="text-4xl font-bold text-center mt-10">SUCCESS</h2>
@@ -419,6 +419,7 @@
       <script src="script/calculation.js"></script>
       <script src="script/utility.js"></script>
       <script src="script/event controler.js"></script>
+      
       
       
   </body>

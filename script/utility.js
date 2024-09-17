@@ -35,4 +35,18 @@ function setBackgroundColor(element){
     const removed = document.getElementById(element);
     seatElement.removeChild(removed);
 }
- 
+
+function setTextById(elementId, value){
+    document.getElementById(elementId).textContent = value;
+}
+
+function customerInfoChecker(){
+    if(seats.length > 0){
+        document.getElementById("btn-buy").disabled = false;
+    }
+}
+
+function buyButton(){
+    document.getElementById("main-section").classList.add("hidden");
+    document.getElementById("success-payment").classList.remove("hidden");
+}
