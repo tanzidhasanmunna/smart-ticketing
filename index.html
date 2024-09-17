@@ -95,7 +95,7 @@
               excepturi exercitationem quasi. In deleniti eaque aut repudiandae
               et a id nisi.
             </p>
-            <button class="btn bg-primary-color text-black border-0">Buy Tickets</button>
+            <button id="buy-tickets" class="btn bg-primary-color text-black border-0">Buy Tickets</button>
           </div>
         </div>
       </div>
@@ -159,7 +159,7 @@
              <div class="text-center mt-10"><button class="btn text-primary-color border-1 border-primary-color place-self-center">See All Offers</button></div>
         </section>
         <!-- Order section -->
-         <section class="bg-[#F7F8F8] border-t-4 border-primary-color rounded-t-[80px] mt-28 font-raleway">
+         <section id="order-section" class="bg-[#F7F8F8] border-t-4 border-primary-color rounded-t-[80px] mt-28 font-raleway">
             <h2 class="text-4xl text-center font-extrabold mt-28 font-raleway">P.H Paribahan</h2>
             <p class="text-center w-[736px] mx-auto mt-6">Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined .</p>
            <!-- Bus Info container -->
@@ -225,68 +225,69 @@
                     </div>
                     <div class="flex items-center justify-center">
                         <div class="flex flex-col gap-2 text- font-bold items-center justify-center">
-                            <P class="my-[18px] px-3">A</P>
-                            <p class="my-[18px] px-3">B</p>
-                            <p class="my-[18px] px-3">C</p>
-                            <p class="my-[18px] px-3">D</p>
-                            <p class="my-[18px] px-3">E</p>
-                            <p class="my-[18px] px-3">F</p>
-                            <p class="my-[18px] px-3">G</p>
-                            <p class="my-[18px] px-3">H</p>
-                            <p class="my-[18px] px-3">I</p>
-                            <p class="my-[18px] px-3">J</p>
+                            <P class="my-[12px] px-3">A</P>
+                            <p class="my-[12px] px-3">B</p>
+                            <p class="my-[12px] px-3">C</p>
+                            <p class="my-[12px] px-3">D</p>
+                            <p class="my-[12px] px-3">E</p>
+                            <p class="my-[12px] px-3">F</p>
+                            <p class="my-[12px] px-3">G</p>
+                            <p class="my-[12px] px-3">H</p>
+                            <p class="my-[12px] px-3">I</p>
+                            <p class="my-[12px] px-3">J</p>
                         </div>
-                        <div class="flex justify-between flex-1">
+                        <!-- Seat container -->
+                        <div id="seat-container" class="flex justify-between flex-1">
                             <div class="flex gap-2">
-                                <div class="my-1 flex flex-col justify-center gap-2 w-[110px]">
-                                    <kbd id="A1" class="kbd px-11 py-4 font-bold">A1</kbd>
-                                    <kbd id="B1" class="kbd px-11 py-4 font-bold">B1</kbd>
-                                    <kbd id="C1" class="kbd px-11 py-4 font-bold">C1</kbd>
-                                    <kbd id="D1" class="kbd px-11 py-4 font-bold">D1</kbd>
-                                    <kbd id="E1" class="kbd px-11 py-4 font-bold">E1</kbd>
-                                    <kbd id="F1" class="kbd px-11 py-4 font-bold">F1</kbd>
-                                    <kbd id="G1" class="kbd px-11 py-4 font-bold">G1</kbd>
-                                    <kbd id="H1" class="kbd px-11 py-4 font-bold">H1</kbd>
-                                    <kbd id="I1" class="kbd px-11 py-4 font-bold">I1</kbd>
-                                    <kbd id="J1" class="kbd px-11 py-4 font-bold">J1</kbd>
+                                <div class="my-1 flex flex-col justify-center gap-2">
+                                    <kbd id="A1" onclick="addSeat(this)" class="btn kbd px-11 py-4 font-bold">A1</kbd>
+                                    <kbd id="B1" onclick="addSeat(this)" class="btn kbd px-11 py-4 font-bold">B1</kbd>
+                                    <kbd id="C1" onclick="addSeat(this)" class="btn kbd px-11 py-4 font-bold">C1</kbd>
+                                    <kbd id="D1" onclick="addSeat(this)" class="btn kbd px-11 py-4 font-bold">D1</kbd>
+                                    <kbd id="E1" onclick="addSeat(this)" class="btn kbd px-11 py-4 font-bold">E1</kbd>
+                                    <kbd id="F1" onclick="addSeat(this)" class="btn kbd px-11 py-4 font-bold">F1</kbd>
+                                    <kbd id="G1" onclick="addSeat(this)" class="btn kbd px-11 py-4 font-bold">G1</kbd>
+                                    <kbd id="H1" onclick="addSeat(this)" class="btn kbd px-11 py-4 font-bold">H1</kbd>
+                                    <kbd id="I1" onclick="addSeat(this)" class="btn kbd px-11 py-4 font-bold">I1</kbd>
+                                    <kbd id="J1" onclick="addSeat(this)" class="btn kbd px-11 py-4 font-bold">J1</kbd>
                                   </div>
                                 <div class="my-1 flex flex-col justify-center gap-2">
-                                    <kbd id="A2" class="kbd px-11 py-4 font-bold">A2</kbd>
-                                    <kbd id="B2" class="kbd px-11 py-4 font-bold">B2</kbd>
-                                    <kbd id="C2" class="kbd px-11 py-4 font-bold">C2</kbd>
-                                    <kbd id="D2" class="kbd px-11 py-4 font-bold">D2</kbd>
-                                    <kbd id="E2" class="kbd px-11 py-4 font-bold">E2</kbd>
-                                    <kbd id="F2" class="kbd px-11 py-4 font-bold">F2</kbd>
-                                    <kbd id="G2" class="kbd px-11 py-4 font-bold">G2</kbd>
-                                    <kbd id="H2" class="kbd px-11 py-4 font-bold">H2</kbd>
-                                    <kbd id="I2" class="kbd px-11 py-4 font-bold">I2</kbd>
-                                    <kbd id="J2" class="kbd px-11 py-4 font-bold">J2</kbd>
+                                    <kbd id="A2" onclick="addSeat(this)" class="btn kbd px-11 py-4 font-bold">A2</kbd>
+                                    <kbd id="B2" onclick="addSeat(this)" class="btn kbd px-11 py-4 font-bold">B2</kbd>
+                                    <kbd id="C2" onclick="addSeat(this)" class="btn kbd px-11 py-4 font-bold">C2</kbd>
+                                    <kbd id="D2" onclick="addSeat(this)" class="btn kbd px-11 py-4 font-bold">D2</kbd>
+                                    <kbd id="E2" onclick="addSeat(this)" class="btn kbd px-11 py-4 font-bold">E2</kbd>
+                                    <kbd id="F2" onclick="addSeat(this)" class="btn kbd px-11 py-4 font-bold">F2</kbd>
+                                    <kbd id="G2" onclick="addSeat(this)" class="btn kbd px-11 py-4 font-bold">G2</kbd>
+                                    <kbd id="H2" onclick="addSeat(this)" class="btn kbd px-11 py-4 font-bold">H2</kbd>
+                                    <kbd id="I2" onclick="addSeat(this)" class="btn kbd px-11 py-4 font-bold">I2</kbd>
+                                    <kbd id="J2" onclick="addSeat(this)" class="btn kbd px-11 py-4 font-bold">J2</kbd>
                                   </div>
                             </div>
                             <div class="flex gap-2">
-                                <div class="my-1 flex flex-col justify-center gap-2 w-[110px]">
-                                    <kbd id="A3" class="kbd px-11 py-4 font-bold">A3</kbd>
-                                    <kbd id="B3" class="kbd px-11 py-4 font-bold">B3</kbd>
-                                    <kbd id="C3" class="kbd px-11 py-4 font-bold">C3</kbd>
-                                    <kbd id="D3" class="kbd px-11 py-4 font-bold">D3</kbd>
-                                    <kbd id="E3" class="kbd px-11 py-4 font-bold">E3</kbd>
-                                    <kbd id="F3" class="kbd px-11 py-4 font-bold">F3</kbd>
-                                    <kbd id="G3" class="kbd px-11 py-4 font-bold">G3</kbd>
-                                    <kbd id="H3" class="kbd px-11 py-4 font-bold">H3</kbd>
-                                    <kbd id="I3" class="kbd px-11 py-4 font-bold">I3</kbd>
-                                    <kbd id="J3" class="kbd px-11 py-4 font-bold">J3</kbd>
+                                <div class="my-1 flex flex-col justify-center gap-2">
+                                    <kbd id="A3" onclick="addSeat(this)" class="btn kbd px-11 py-4 font-bold">A3</kbd>
+                                    <kbd id="B3" onclick="addSeat(this)" class="btn kbd px-11 py-4 font-bold">B3</kbd>
+                                    <kbd id="C3" onclick="addSeat(this)" class="btn kbd px-11 py-4 font-bold">C3</kbd>
+                                    <kbd id="D3" onclick="addSeat(this)" class="btn kbd px-11 py-4 font-bold">D3</kbd>
+                                    <kbd id="E3" onclick="addSeat(this)" class="btn kbd px-11 py-4 font-bold">E3</kbd>
+                                    <kbd id="F3" onclick="addSeat(this)" class="btn kbd px-11 py-4 font-bold">F3</kbd>
+                                    <kbd id="G3" onclick="addSeat(this)" class="btn kbd px-11 py-4 font-bold">G3</kbd>
+                                    <kbd id="H3" onclick="addSeat(this)" class="btn kbd px-11 py-4 font-bold">H3</kbd>
+                                    <kbd id="I3" onclick="addSeat(this)" class="btn kbd px-11 py-4 font-bold">I3</kbd>
+                                    <kbd id="J3" onclick="addSeat(this)" class="btn kbd px-11 py-4 font-bold">J3</kbd>
                                   </div>
                                 <div class="my-1 flex flex-col justify-center gap-2">
-                                    <kbd id="A4" class="kbd px-11 py-4 font-bold">A4</kbd>
-                                    <kbd id="B4" class="kbd px-11 py-4 font-bold">B4</kbd>
-                                    <kbd id="C4" class="kbd px-11 py-4 font-bold">C4</kbd>
-                                    <kbd id="D4" class="kbd px-11 py-4 font-bold">D4</kbd>
-                                    <kbd id="E4" class="kbd px-11 py-4 font-bold">E4</kbd>
-                                    <kbd id="F4" class="kbd px-11 py-4 font-bold">F4</kbd>
-                                    <kbd id="G4" class="kbd px-11 py-4 font-bold">G4</kbd>
-                                    <kbd id="H4" class="kbd px-11 py-4 font-bold">H4</kbd>
-                                    <kbd id="I4" class="kbd px-11 py-4 font-bold">I4</kbd>
-                                    <kbd id="J4" class="kbd px-11 py-4 font-bold">J4</kbd>
+                                    <kbd id="A4" onclick="addSeat(this)" class="btn kbd px-11 py-4 font-bold">A4</kbd>
+                                    <kbd id="B4" onclick="addSeat(this)" class="btn kbd px-11 py-4 font-bold">B4</kbd>
+                                    <kbd id="C4" onclick="addSeat(this)" class="btn kbd px-11 py-4 font-bold">C4</kbd>
+                                    <kbd id="D4" onclick="addSeat(this)" class="btn kbd px-11 py-4 font-bold">D4</kbd>
+                                    <kbd id="E4" onclick="addSeat(this)" class="btn kbd px-11 py-4 font-bold">E4</kbd>
+                                    <kbd id="F4" onclick="addSeat(this)" class="btn kbd px-11 py-4 font-bold">F4</kbd>
+                                    <kbd id="G4" onclick="addSeat(this)" class="btn kbd px-11 py-4 font-bold">G4</kbd>
+                                    <kbd id="H4" onclick="addSeat(this)" class="btn kbd px-11 py-4 font-bold">H4</kbd>
+                                    <kbd id="I4" onclick="addSeat(this)" class="btn kbd px-11 py-4 font-bold">I4</kbd>
+                                    <kbd id="J4" onclick="addSeat(this)" class="btn kbd px-11 py-4 font-bold">J4</kbd>
                                   </div>
                             </div>
                         </div>
@@ -425,5 +426,10 @@
           </div>
         </nav>
       </footer>
+      <script src="script/calculation.js"></script>
+      <script src="script/utility.js"></script>
+      <script src="script/event controler.js"></script>
+      
+      
   </body>
 </html>
